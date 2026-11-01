@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Personal Portfolio</title>
+
+<style>
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+    color: #333;
+}
+
+/* Navigation Bar */
+header {
+    background: #202040;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00d4ff;
+}
+
+/* Home Section */
+.home {
+    height: 90vh;
+    background: linear-gradient(135deg, #202040, #5546a5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 2s;
+}
+
+.home h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.home span {
+    color: #00d4ff;
+}
+
+.home p {
+    margin: 20px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background: #00d4ff;
+    color: #202040;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: scale(1.1);
+}
+
+/* All Sections */
+section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+section h2 {
+    color: #202040;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 25px;
+    margin: 15px auto;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* Skills */
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills-list div {
+    background: #202040;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.skills-list div:hover {
+    background: #00a8cc;
+    transform: scale(1.1);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    background: #202040;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 40px 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    .home h1 {
+        font-size: 26px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<header>
+<nav>
+<h2 class="logo">My Portfolio</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+<!-- Home -->
+<section id="home" class="home">
+<div>
+<h1>Hello, I'm <span>Bhavana</span></h1>
+<h3>B.Tech Student | Information Technology</h3>
+<p>Welcome to my personal portfolio website.</p>
+<a href="#about" class="btn">Explore More</a>
+</div>
+</section>
+<!-- About -->
+<section id="about">
+<h2>About Me</h2>
+<p>
+I am a B.Tech student in Information Technology.
+I am interested in learning new technologies,
+developing websites and improving my technical skills.
+</p>
+</section>
+<!-- Education -->
+<section id="education">
+<h2>Educational Qualifications</h2>
+<div class="card">
+<h3>B.Tech - Information Technology</h3>
+<p>College: NRI University College</p>
+<p>Year: 1st Year</p>
+</div>
+<div class="card">
+<h3>Intermediate</h3>
+<p>College: Your College Name</p>
+</div>
+<div class="card">
+<h3>SSC</h3>
+<p>School: Your School Name</p>
+</div>
+</section>
+<!-- Skills -->
+<section id="skills">
+<h2>Technical Skills</h2>
+<div class="skills-list">
+<div>HTML</div>
+<div>CSS</div>
+<div>Python</div>
+<div>Java</div>
+<div>C Programming</div>
+</div>
+</section>
+<!-- Hobbies -->
+<section id="hobbies">
+<h2>My Hobbies</h2>
+<div class="card">
+<p>Reading Books</p>
+<p>Watching Television</p>
+<p>Learning New Technologies</p>
+<p>Listening to Music</p>
+</div>
+</section>
+<!-- Projects -->
+<section id="projects">
+<h2>My Projects</h2>
+<div class="card">
+<h3>Personal Portfolio Website</h3>
+<p>A responsive website created using HTML and CSS.</p>
+</div>
+<div class="card">
+<h3>Restaurant Webpage</h3>
+<p>A simple restaurant website using HTML and CSS.</p>
+</div>
+</section>
+<!-- Achievements -->
+<section id="achievements">
+<h2>Achievements</h2>
+<div class="card">
+<p>Second Prize in Running Race</p>
+<p>First Prize in Team Kho-Kho</p>
+</div>
+</section>
+<!-- Resume -->
+<section id="resume">
+<h2>My Resume</h2>
+<p>Click below to download my resume.</p>
+<a href="resume.pdf" download class="btn">Download Resume</a>
+</section>
+<!-- Contact -->
+<section id="contact">
+<h2>Contact Me</h2>
+<p>Email: yourmail@gmail.com</p>
+<p>Phone: +91 XXXXXXXXXX</p>
+<p>Location: Andhra Pradesh, India</p>
+</section>
+<!-- Footer -->
+<footer>
+<p>© 2026 Bhavana | Personal Portfolio Website</p>
+</footer>
+</body>
+</html>
